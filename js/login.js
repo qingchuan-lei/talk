@@ -30,7 +30,7 @@
             method: 'POST',
             params:{ loginId, loginPwd}
         })
-        res && window.location.replace('/聊天机器人练习');//res有数据后前往下一个地址；
+        res && window.location.replace(baseURL);//res有数据后前往下一个地址；
 
         // const res = await fetch('https://study.duyiedu.com/api/user/login', {
         //     method: 'POST',

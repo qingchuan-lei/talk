@@ -46,7 +46,7 @@
         // if (result.code !== 0) {
         //     window.alert(result.msg);return
         // }
-        res && window.location.replace('/聊天机器人练习');
+        res && window.location.replace(baseURL);
         
     }
     // 创建表单验证函数

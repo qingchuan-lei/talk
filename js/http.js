@@ -1,5 +1,5 @@
 const BASE_URL = 'https://study.duyiedu.com/api';
-
+var baseURL = '/talk/';
 const fethcFn = async ({ url, method = 'GET', params = {} }) => {
     // get请求参数拼接
     let result = null;
@@ -36,7 +36,7 @@ const fethcFn = async ({ url, method = 'GET', params = {} }) => {
             if (result.status === 401) {
                 window.alert('权限token不正确');
                 sessionStorage.removeItem('token');
-                window.location.replace('/聊天机器人练习/login.html')
+                window.location.replace(baseURL+ 'login.html')
                 return;
             }
             window.alert(result.msg);

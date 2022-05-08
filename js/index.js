@@ -28,7 +28,7 @@
          //清空sessionStorage
         sessionStorage.removeItem('token');
         //界面跳转至login.html
-        window.location.replace('/聊天机器人练习/login.html');
+        window.location.replace(baseURL+ 'login.html');
     }
     // 创建键盘输入事件
     const onInputContainerKeyUp = (e) => {
